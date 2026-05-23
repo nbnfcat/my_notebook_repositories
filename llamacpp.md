@@ -16,8 +16,8 @@
 - ` -m `：模型文件输入指令。
 - ` -c `：模型上下文字符数。通常可以考虑2048（约为4页A4的英文）和4096。
 - ` -ngl `：模型加载入GPU的层数。通常把这个数字写大，保证整个模型完全在GPU上运行，运行速度快。
-- 文档：[cli](\document\llamacpp_cli.md)
-- 文档：[cli中文翻译](\document\llamacpp_cli_Chinese.md)
+- 文档：[cli](document\llamacpp_cli.md)
+- 文档：[cli中文翻译](document\llamacpp_cli_Chinese.md)
 
 ### 加载模型到本地同时开启一个本地服务器
 （符合OpenAI端口格式，可以当作OpenAI的API受到调用）
@@ -27,8 +27,8 @@
 - ` .\llama-server `：启用名为llama-server的程序，llamacpp解压文件中是有一个这个程序的。
 - ` --port PORT `：定义服务器的端口。使用网址：http://localhost:PORT (例如：http://localhost:8080)可以打开对话UI；调用API时接口为：http://localhost:"服务器端口"/v1/chat/completions(例如：http://localhost:8080/v1/chat/completions)，API key随意撰写即可。
 - `--host HOST`:定义局域网端口。使用网址：http://服务器IP:PORT 即可打开网页版聊天窗口。API：http://服务器IP:PORT/v1/chat/completions ，API key随意撰写即可。
-- 文档：[server](\document\llamacpp_server.md)
-- 文档：[server中文翻译](\document\llamacpp_server_Chinese.md)
+- 文档：[server](document\llamacpp_server.md)
+- 文档：[server中文翻译](document\llamacpp_server_Chinese.md)
 
 ### 注：
 在需要使用GPU跑模型的时候，要下载对应版本的llamacpp，如4060用cuda12，要下载cuda12版本的llamacpp，同时把隔壁的"CUDA 12.4 DLLs"也下载下来并放在llamacpp程序的文件夹中，这样才能通过GPU来跑模型。如果增加"CUDA 12.4 DLLs"的文件，即使是使用cuda12版本的llamacpp也会退化到使用CPU和占用内存来跑的版本**而且不会报错**。
@@ -55,7 +55,7 @@
 
 
 ## llamacpp-b9010-README文档翻译
-原文件：[README](\document/llama.cpp-b9010_README.md)
+原文件：[README](document/llama.cpp-b9010_README.md)
 
 ![llama](https://user-images.githubusercontent.com/1991296/230134379-7181e485-c521-4d23-a0d6-f7b3b61ba524.png)
 
