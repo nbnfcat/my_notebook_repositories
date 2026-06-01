@@ -5,3 +5,4 @@
 - [Git版本控制](git.md)
 - [llamacpp本地模型部署](llamacpp.md)
 - [Python语法](python.md)
+- [计算机科学导论](introduction_to_computers.md)
