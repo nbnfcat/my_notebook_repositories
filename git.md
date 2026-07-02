@@ -93,10 +93,14 @@ git rm <文件>   # 暂存区的删除命令（git的删除命令）
 删除与修改的级别是一样的，如果需要从git中完全删除，应当在删除后进行提交，否则只被认为是暂存区级的删除。
 
 ### SSH链接创建
+在gitbush中输入下述命令
 ```gitbush
 $ ssh-keygen -t  rsa -C "<邮箱>"
 ```
-详细的步骤可见：[人人都能看懂的Git教程！Git如何和 GitHub、GitLab 交互？团队如何用 Git 协作开发？小白也能看懂的Git教程! 【based 玄离199 start 6:33】](https://www.bilibili.com/video/BV1d6XVYqEuy/)
+按照提示enter或y,直到完成为止，此时在 "C:\Users\nbnfcatIntel\.ssh\id_rsa.pub" 中将保存你创建的SSH密码。在 "Github网站\Settings\SSH and GPG keys" 中，创建新的SSH key并把刚刚的SSH密码复制到里面，即可完成配置。
+注：
+- 使用本方法连接远程仓库时应当使用仓库的SSH地址而非HTTP格式地址。
+- 详细的步骤可见：[人人都能看懂的Git教程！Git如何和 GitHub、GitLab 交互？团队如何用 Git 协作开发？小白也能看懂的Git教程! 【based 玄离199 start 6:33】](https://www.bilibili.com/video/BV1d6XVYqEuy/)
 
 ### 连接远程仓库
 ```powershell
