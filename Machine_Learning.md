@@ -20,5 +20,14 @@ based
 ### 监督学习
 定义：表示x到y的映射（正确的y）,对映射完成学习后，在输入未见过的x时系统将输出相应的y。例：机器翻译 “English # Input” to "Chinese # Output"
 
-#### 回归Regression
-定义：
+分类：
+- 回归 Regression：从"无限可能数 # 可能结果域，域空间无穷 "中，预测一个"数字 # Output"。预测结果是按照离散的数据进行拟合得到的输入与输出的"映射关系 # 直线/曲线/复杂函数拟合"。
+- 分类 Classification：从少量可能中，预测一个类型(categories/class)。通过数据拟合划定一个分类的边界，从而预测当前输入（单个/多个输入）的类型。
+
+### 无监督学习
+定义：在无明确输出映射关联的"数据 # Input"中找到某些"关系 # Output"。
+
+分类：
+- 聚类 Clustering:自主地将数据进行分组。
+- 异常检测 Anomaly detection:找出异常的数据。
+- 降维 Dimensionality reduction:将数据压缩，用更小的信息对其进行描述。
